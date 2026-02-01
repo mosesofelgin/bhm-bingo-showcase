@@ -56,6 +56,7 @@ export default function Home() {
                 <Button 
                   size="lg"
                   className="bg-[#d4a574] text-[#2d5016] hover:bg-[#c49564] text-lg px-8 py-6 rounded-lg font-semibold"
+                  onClick={() => window.open('http://localhost:3001', '_blank')}
                 >
                   Play Now
                 </Button>
@@ -63,6 +64,7 @@ export default function Home() {
                   size="lg"
                   variant="outline"
                   className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 rounded-lg font-semibold"
+                  onClick={() => window.open('http://localhost:3001/heroes', '_blank')}
                 >
                   View Heroes
                 </Button>
@@ -210,6 +212,7 @@ export default function Home() {
             <Button 
               size="lg"
               className="bg-[#2d5016] text-white hover:bg-[#3d6820] text-lg px-10 py-6 rounded-lg font-semibold"
+              onClick={() => window.open('http://localhost:3001/heroes', '_blank')}
             >
               Browse All Heroes
             </Button>
@@ -288,6 +291,7 @@ export default function Home() {
           <Button 
             size="lg"
             className="bg-[#d4a574] text-[#2d5016] hover:bg-[#c49564] text-xl px-12 py-7 rounded-lg font-bold"
+            onClick={() => window.open('http://localhost:3001', '_blank')}
           >
             Launch Game
           </Button>

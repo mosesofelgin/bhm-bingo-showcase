@@ -56,7 +56,7 @@ export default function Home() {
                 <Button 
                   size="lg"
                   className="bg-[#d4a574] text-[#2d5016] hover:bg-[#c49564] text-lg px-8 py-6 rounded-lg font-semibold"
-                  onClick={() => window.open('https://3001-ijk5sl6y7b4vpl11t6jfn-14ee4f4d.us2.manus.computer', '_blank')}
+                  onClick={() => window.location.href = '/game'}
                 >
                   Play Now
                 </Button>
@@ -64,7 +64,7 @@ export default function Home() {
                   size="lg"
                   variant="outline"
                   className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 rounded-lg font-semibold"
-                  onClick={() => window.open('https://3001-ijk5sl6y7b4vpl11t6jfn-14ee4f4d.us2.manus.computer/heroes', '_blank')}
+                  onClick={() => window.location.href = '/game'}
                 >
                   View Heroes
                 </Button>
@@ -212,7 +212,7 @@ export default function Home() {
             <Button 
               size="lg"
               className="bg-[#2d5016] text-white hover:bg-[#3d6820] text-lg px-10 py-6 rounded-lg font-semibold"
-              onClick={() => window.open('https://3001-ijk5sl6y7b4vpl11t6jfn-14ee4f4d.us2.manus.computer/heroes', '_blank')}
+              onClick={() => window.location.href = '/game'}
             >
               Browse All Heroes
             </Button>
@@ -291,7 +291,7 @@ export default function Home() {
           <Button 
             size="lg"
             className="bg-[#d4a574] text-[#2d5016] hover:bg-[#c49564] text-xl px-12 py-7 rounded-lg font-bold"
-            onClick={() => window.open('https://3001-ijk5sl6y7b4vpl11t6jfn-14ee4f4d.us2.manus.computer', '_blank')}
+            onClick={() => window.location.href = '/game'}
           >
             Launch Game
           </Button>

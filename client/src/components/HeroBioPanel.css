@@ -1,0 +1,244 @@
+.hero-bio-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: flex-end;
+  z-index: 50;
+  padding: 16px;
+}
+
+.hero-bio-panel {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border-radius: 16px 16px 0 0;
+  max-width: 600px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--primary);
+}
+
+.bio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--primary-foreground);
+  border-radius: 14px 14px 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.bio-hero-info {
+  flex: 1;
+}
+
+.bio-hero-name {
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.bio-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.bio-category {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.bio-era {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.bio-close {
+  background: none;
+  border: none;
+  color: var(--primary-foreground);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.bio-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bio-image-container {
+  padding: 16px 24px;
+  background-color: var(--muted);
+}
+
+.bio-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+}
+
+.bio-content {
+  padding: 24px;
+}
+
+.bio-section {
+  margin-bottom: 24px;
+}
+
+.bio-section-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bio-summary {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--card-foreground);
+}
+
+.bio-accomplishment {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--secondary);
+  font-weight: 600;
+  padding: 12px;
+  background-color: var(--muted);
+  border-left: 4px solid var(--secondary);
+  border-radius: 4px;
+}
+
+.bio-learn-more {
+  overflow: hidden;
+}
+
+.bio-learn-more-content {
+  padding-bottom: 16px;
+}
+
+.bio-full {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--card-foreground);
+}
+
+.bio-expand-button {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+}
+
+.bio-expand-button:hover {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bio-expand-button:active {
+  transform: translateY(0);
+}
+
+/* Scrollbar styling */
+.hero-bio-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.hero-bio-panel::-webkit-scrollbar-track {
+  background: var(--muted);
+  border-radius: 4px;
+}
+
+.hero-bio-panel::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+.hero-bio-panel::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .hero-bio-overlay {
+    padding: 0;
+  }
+
+  .hero-bio-panel {
+    border-radius: 20px 20px 0 0;
+    max-height: 90vh;
+  }
+
+  .bio-header {
+    padding: 16px;
+  }
+
+  .bio-hero-name {
+    font-size: 24px;
+  }
+
+  .bio-image {
+    height: 200px;
+  }
+
+  .bio-content {
+    padding: 16px;
+  }
+
+  .bio-section {
+    margin-bottom: 16px;
+  }
+
+  .bio-section-title {
+    font-size: 14px;
+  }
+
+  .bio-summary,
+  .bio-accomplishment,
+  .bio-full {
+    font-size: 14px;
+  }
+}

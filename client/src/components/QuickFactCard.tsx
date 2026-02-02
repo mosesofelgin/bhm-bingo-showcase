@@ -1,4 +1,4 @@
-import { X, Lightbulb, ExternalLink } from "lucide-react";
+import { X, Lightbulb } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface QuickFactCardProps {
@@ -6,7 +6,7 @@ interface QuickFactCardProps {
     name: string;
     bioSummary: string;
     keyAccomplishment: string;
-    fullBio: string;
+    bioFull: string;
     era: string;
     category: string;
     imageUrl: string;
@@ -75,55 +75,11 @@ export default function QuickFactCard({ hero, onClose }: QuickFactCardProps) {
             <div>
               <h3 className="font-bold text-gray-900 dark:text-white mb-3 text-lg">Biography</h3>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                {hero.fullBio}
+                {hero.bioFull}
               </p>
             </div>
 
-            {/* Learn More section */}
-            <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
-              <h3 className="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                <ExternalLink className="w-5 h-5" />
-                Learn More
-              </h3>
-              <div className="grid gap-3">
-                <a
-                  href={`https://nmaahc.si.edu/explore/search?search=${encodeURIComponent(hero.name)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-lg transition-colors group"
-                >
-                  <div>
-                    <div className="font-semibold text-gray-900 dark:text-white">Smithsonian NMAAHC</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">National Museum of African American History & Culture</div>
-                  </div>
-                  <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors" />
-                </a>
-                <a
-                  href={`https://www.blackpast.org/?s=${encodeURIComponent(hero.name)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-lg transition-colors group"
-                >
-                  <div>
-                    <div className="font-semibold text-gray-900 dark:text-white">BlackPast.org</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Online Reference Guide to African American History</div>
-                  </div>
-                  <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors" />
-                </a>
-                <a
-                  href={`https://www.biography.com/search?q=${encodeURIComponent(hero.name)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-lg transition-colors group"
-                >
-                  <div>
-                    <div className="font-semibold text-gray-900 dark:text-white">Biography.com</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Detailed Life Stories and Achievements</div>
-                  </div>
-                  <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors" />
-                </a>
-              </div>
-            </div>
+
           </div>
         </motion.div>
       </motion.div>

@@ -209,7 +209,27 @@ export default function Game() {
       return;
     }
 
-    const randomHero = uncalledHeroes[Math.floor(Math.random() * uncalledHeroes.length)];
+    // SMART DRAW LOGIC: 70% chance to pick from player's board
+    const uncalledOnBoard = uncalledHeroes.filter((h) =>
+      gameState.boardHeroes.some((bh) => bh.id === h.id)
+    );
+    const uncalledOffBoard = uncalledHeroes.filter((h) =>
+      !gameState.boardHeroes.some((bh) => bh.id === h.id)
+    );
+
+    let randomHero: Hero;
+    const shouldPickFromBoard = Math.random() < 0.7; // 70% chance
+    
+    if (shouldPickFromBoard && uncalledOnBoard.length > 0) {
+      // Pick from board (70% of the time)
+      randomHero = uncalledOnBoard[Math.floor(Math.random() * uncalledOnBoard.length)];
+    } else if (uncalledOffBoard.length > 0) {
+      // Pick off board (30% of the time, or if no board heroes left)
+      randomHero = uncalledOffBoard[Math.floor(Math.random() * uncalledOffBoard.length)];
+    } else {
+      // Fallback: pick any uncalled hero
+      randomHero = uncalledHeroes[Math.floor(Math.random() * uncalledHeroes.length)];
+    }
     // Use advanced clue generator for quiz mode
     const clueData = quizMode ? generateAdvancedClue(randomHero, "medium") : null;
     const clue = clueData ? clueData.text : null;
@@ -487,7 +507,7 @@ export default function Game() {
       : "h-20 sm:h-24 lg:h-28 min-h-[5rem]";
 
     return (
-      <div className="h-screen flex flex-col overflow-hidden bg-gradient-to-br from-[#f5f5f5] to-[#e8f5e8]">
+      <div className="h-screen flex flex-col overflow-hidden bg-gradient-to-br from-[#f5f5f5] to-[#e8f5e8]" style={{ height: '100dvh' }}>
         <div className="flex-1 flex flex-col max-w-7xl mx-auto w-full px-2 sm:px-4 py-2 sm:py-4 overflow-hidden">
           {/* Header */}
           <div className="text-center mb-2 flex-shrink-0">
@@ -579,11 +599,11 @@ export default function Game() {
           )}
 
           {/* Main Content Area - Flex container */}
-          <div className="flex-1 grid lg:grid-cols-[1fr_300px] gap-2 sm:gap-4 overflow-hidden">
+          <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-2 sm:gap-4 overflow-hidden">
             {/* Bingo Board Column */}
             <div className="flex flex-col overflow-hidden">
               {/* Grid Container - Takes available space */}
-              <div className="flex-1 overflow-y-auto mb-4">
+              <div className="flex-1 overflow-y-auto pb-2">
                 <div className={`grid ${gridSize} gap-2 sm:gap-3`}>
                 {gameState.boardHeroes.map((hero, index) => {
                   const isMarked = gameState.markedSquares.includes(index);
@@ -649,7 +669,7 @@ export default function Game() {
               </div>
 
               {/* Controls - Fixed at bottom */}
-              <div className="flex gap-2 sm:gap-4 flex-shrink-0 flex-wrap">
+              <div className="flex gap-2 sm:gap-4 flex-shrink-0 flex-wrap mt-2">
                 <Button
                   onClick={() => {
                     if (confirm("Start a new game? Your current progress will be lost.")) {
@@ -665,10 +685,10 @@ export default function Game() {
                 </Button>
                 <Button
                   onClick={callNextHero}
-                  disabled={isLoading}
-                  className="flex-1 py-3 text-base font-semibold bg-[#2d5016] hover:bg-[#3d6820] text-white rounded-lg disabled:opacity-50"
+                  disabled={isLoading || gameState.hasWon}
+                  className="flex-1 py-3 text-base font-semibold bg-[#2d5016] hover:bg-[#3d6820] text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isLoading ? "Calling..." : "Call Next Hero"}
+                  {isLoading ? "Calling..." : gameState.hasWon ? "Game Won!" : "Call Next Hero"}
                 </Button>
                 
                 {/* Skip button for when hero isn't on board */}
@@ -717,8 +737,8 @@ export default function Game() {
               </div>
             </div>
 
-            {/* Sidebar - Called Heroes */}
-            <div className="flex flex-col overflow-hidden">
+            {/* Sidebar - Called Heroes (hidden on mobile) */}
+            <div className="hidden lg:flex flex-col overflow-hidden">
               <Card className="p-4 bg-white shadow-lg flex-1 flex flex-col overflow-hidden">
                 <h3 className="text-lg font-bold text-[#2d5016] mb-4 flex items-center gap-2">
                   <Trophy className="w-5 h-5" />

@@ -308,7 +308,7 @@ export const heroDatabase: Hero[] = [
     era: "1868-1963",
     category: "Civil Rights",
     bioFull: "William Edward Burghardt Du Bois was an American sociologist, historian, and civil rights activist. He was one of the founders of the NAACP and a leading voice for African American rights. His book 'The Souls of Black Folk' is a seminal work in African American literature and sociology.",
-    imageUrl: "/images/heroes/w.e.b.-du-bois.jpg"
+    imageUrl: "/images/heroes/web-du-bois.jpg"
   },
   // Additional 45 heroes (31-75)
   {

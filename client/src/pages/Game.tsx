@@ -487,46 +487,46 @@ export default function Game() {
       : "h-20 sm:h-24 lg:h-28 min-h-[5rem]";
 
     return (
-      <div className="min-h-screen max-h-screen overflow-hidden bg-gradient-to-br from-[#f5f5f5] to-[#e8f5e8] py-2 px-2 sm:py-4 sm:px-4">
-        <div className="max-w-7xl mx-auto">
+      <div className="h-screen flex flex-col overflow-hidden bg-gradient-to-br from-[#f5f5f5] to-[#e8f5e8]">
+        <div className="flex-1 flex flex-col max-w-7xl mx-auto w-full px-2 sm:px-4 py-2 sm:py-4 overflow-hidden">
           {/* Header */}
-          <div className="text-center mb-2 sm:mb-4">
-            <h1 className="text-2xl sm:text-3xl font-bold text-[#2d5016]">
+          <div className="text-center mb-2 flex-shrink-0">
+            <h1 className="text-xl sm:text-2xl font-bold text-[#2d5016]">
               Black History Bingo
             </h1>
             
             {/* Game Stats */}
-            <div className="flex justify-center gap-2 mt-2 text-xs sm:text-sm flex-wrap">
-              <div className="bg-gradient-to-r from-yellow-400 to-orange-500 px-4 py-2 rounded-lg shadow-lg">
-                <span className="text-white font-semibold">💰 Score:</span>
-                <span className="ml-2 font-bold text-white text-lg">
+            <div className="flex justify-center gap-1 sm:gap-2 mt-1 text-xs flex-wrap">
+              <div className="bg-gradient-to-r from-yellow-400 to-orange-500 px-2 py-1 rounded shadow">
+                <span className="text-white font-semibold">💰</span>
+                <span className="ml-1 font-bold text-white">
                   {gameState.totalScore}
                 </span>
               </div>
-              <div className="bg-white px-4 py-2 rounded-lg shadow">
-                <span className="text-gray-600">⏱️ Time:</span>
-                <span className="ml-2 font-bold text-indigo-600">
+              <div className="bg-white px-2 py-1 rounded shadow">
+                <span className="text-gray-600">⏱️</span>
+                <span className="ml-1 font-bold text-indigo-600">
                   {formatTime(gameTimer)}
                 </span>
               </div>
-              <div className="bg-white px-4 py-2 rounded-lg shadow">
-                <span className="text-gray-600">Streak:</span>
-                <span className="ml-2 font-bold text-green-600">
-                  🔥 {gameState.streak}
+              <div className="bg-white px-2 py-1 rounded shadow">
+                <span className="text-gray-600">🔥</span>
+                <span className="ml-1 font-bold text-green-600">
+                  {gameState.streak}
                 </span>
               </div>
-              <div className="bg-white px-4 py-2 rounded-lg shadow">
-                <span className="text-gray-600">Accuracy:</span>
-                <span className="ml-2 font-bold text-blue-600">
+              <div className="bg-white px-2 py-1 rounded shadow">
+                <span className="text-gray-600">✓</span>
+                <span className="ml-1 font-bold text-blue-600">
                   {gameState.totalAttempts > 0 
                     ? Math.round(((gameState.totalAttempts - gameState.incorrectAttempts) / gameState.totalAttempts) * 100)
                     : 100}%
                 </span>
               </div>
               {personalBest && (
-                <div className="bg-white px-4 py-2 rounded-lg shadow">
-                  <span className="text-gray-600">🏆 Best:</span>
-                  <span className="ml-2 font-bold text-purple-600">
+                <div className="bg-white px-2 py-1 rounded shadow">
+                  <span className="text-gray-600">🏆</span>
+                  <span className="ml-1 font-bold text-purple-600">
                     {formatTime(personalBest)}
                   </span>
                 </div>
@@ -536,7 +536,7 @@ export default function Game() {
           
           {/* Feedback Banner */}
           {feedback && (
-            <div className={`max-w-3xl mx-auto mb-4 p-4 rounded-lg text-center font-bold text-lg ${
+            <div className={`max-w-3xl mx-auto mb-2 p-2 rounded-lg text-center font-bold text-sm ${
               feedback.startsWith('✓') 
                 ? 'bg-green-100 text-green-800 border-2 border-green-500'
                 : 'bg-red-100 text-red-800 border-2 border-red-500'
@@ -547,12 +547,12 @@ export default function Game() {
 
           {/* Current Hero/Question Display */}
           {gameState.currentHero && (
-            <div className="max-w-3xl mx-auto mb-2 sm:mb-4">
-              <Card className="p-3 sm:p-4 bg-gradient-to-r from-[#2d5016] to-[#3d6820] text-white shadow-lg">
+            <div className="max-w-3xl mx-auto mb-2 flex-shrink-0">
+              <Card className="p-2 sm:p-3 bg-gradient-to-r from-[#2d5016] to-[#3d6820] text-white shadow-lg">
                 <div className="text-xs sm:text-sm opacity-90 mb-1">
                   {quizMode ? "Current Question:" : "Current Hero:"}
                 </div>
-                <div className="text-base sm:text-lg md:text-xl font-bold">
+                <div className="text-sm sm:text-base font-bold">
                   {quizMode && gameState.currentClue
                     ? gameState.currentClue
                     : gameState.currentHero.name}
@@ -570,7 +570,7 @@ export default function Game() {
                 
                 {/* Hint Display */}
                 {currentHint && (
-                  <div className="mt-4 p-3 bg-yellow-400 text-gray-900 rounded-lg font-semibold animate-pulse">
+                  <div className="mt-2 p-2 bg-yellow-400 text-gray-900 rounded text-xs sm:text-sm font-semibold animate-pulse">
                     {currentHint}
                   </div>
                 )}
@@ -578,10 +578,13 @@ export default function Game() {
             </div>
           )}
 
-          <div className="grid lg:grid-cols-[1fr_300px] gap-2 sm:gap-4 max-h-[calc(100vh-200px)] overflow-y-auto">
-            {/* Bingo Board */}
-            <div>
-              <div className={`grid ${gridSize} gap-2 sm:gap-3 mb-4`}>
+          {/* Main Content Area - Flex container */}
+          <div className="flex-1 grid lg:grid-cols-[1fr_300px] gap-2 sm:gap-4 overflow-hidden">
+            {/* Bingo Board Column */}
+            <div className="flex flex-col overflow-hidden">
+              {/* Grid Container - Takes available space */}
+              <div className="flex-1 overflow-y-auto mb-4">
+                <div className={`grid ${gridSize} gap-2 sm:gap-3`}>
                 {gameState.boardHeroes.map((hero, index) => {
                   const isMarked = gameState.markedSquares.includes(index);
                   const isFreeSpace = index === Math.floor(gameState.boardSize * gameState.boardSize / 2);
@@ -642,10 +645,11 @@ export default function Game() {
                     </Card>
                   );
                 })}
+                </div>
               </div>
 
-              {/* Controls */}
-              <div className="flex gap-4">
+              {/* Controls - Fixed at bottom */}
+              <div className="flex gap-2 sm:gap-4 flex-shrink-0 flex-wrap">
                 <Button
                   onClick={() => {
                     if (confirm("Start a new game? Your current progress will be lost.")) {
@@ -655,14 +659,14 @@ export default function Game() {
                       setShowWinModal(false);
                     }
                   }}
-                  className="py-6 px-6 text-lg font-semibold bg-red-600 hover:bg-red-700 text-white rounded-lg"
+                  className="py-3 px-4 text-base font-semibold bg-red-600 hover:bg-red-700 text-white rounded-lg"
                 >
                   New Game
                 </Button>
                 <Button
                   onClick={callNextHero}
                   disabled={isLoading}
-                  className="flex-1 py-6 text-lg font-semibold bg-[#2d5016] hover:bg-[#3d6820] text-white rounded-lg disabled:opacity-50"
+                  className="flex-1 py-3 text-base font-semibold bg-[#2d5016] hover:bg-[#3d6820] text-white rounded-lg disabled:opacity-50"
                 >
                   {isLoading ? "Calling..." : "Call Next Hero"}
                 </Button>
@@ -682,7 +686,7 @@ export default function Game() {
                       setCurrentHint(null);
                       setTimeout(() => setFeedback(null), 2000);
                     }}
-                    className="px-6 py-6 bg-gray-500 hover:bg-gray-600 text-white rounded-lg font-semibold"
+                    className="px-4 py-3 bg-gray-500 hover:bg-gray-600 text-white rounded-lg font-semibold"
                   >
                     Not on My Board
                   </Button>
@@ -693,7 +697,7 @@ export default function Game() {
                   <Button
                     onClick={handleHintClick}
                     disabled={currentHintLevel >= 5}
-                    className="px-6 py-6 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg font-semibold disabled:opacity-50"
+                    className="px-4 py-3 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg font-semibold disabled:opacity-50"
                     title="Get a hint (costs points)"
                   >
                     💡 Hint
@@ -706,7 +710,7 @@ export default function Game() {
                     setGameState(null);
                   }}
                   variant="outline"
-                  className="px-6 py-6 border-2 border-gray-300 hover:bg-gray-100 rounded-lg"
+                  className="px-4 py-3 border-2 border-gray-300 hover:bg-gray-100 rounded-lg"
                 >
                   <ArrowLeft className="w-5 h-5" />
                 </Button>
@@ -714,8 +718,8 @@ export default function Game() {
             </div>
 
             {/* Sidebar - Called Heroes */}
-            <div>
-              <Card className="p-4 bg-white shadow-lg sticky top-6">
+            <div className="flex flex-col overflow-hidden">
+              <Card className="p-4 bg-white shadow-lg flex-1 flex flex-col overflow-hidden">
                 <h3 className="text-lg font-bold text-[#2d5016] mb-4 flex items-center gap-2">
                   <Trophy className="w-5 h-5" />
                   Called Heroes ({gameState.calledHeroes.length})
@@ -723,7 +727,7 @@ export default function Game() {
                 {gameState.calledHeroes.length === 0 ? (
                   <p className="text-gray-500 text-sm">No heroes called yet</p>
                 ) : (
-                  <div className="space-y-2 max-h-[600px] overflow-y-auto">
+                  <div className="space-y-2 flex-1 overflow-y-auto">
                     {gameState.calledHeroes.map((hero, index) => (
                       <div
                         key={index}

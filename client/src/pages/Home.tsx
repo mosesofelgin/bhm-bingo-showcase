@@ -49,7 +49,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl lg:text-2xl text-[#f0f4ed] leading-relaxed">
-                An engaging bingo game featuring 30 remarkable Black historical figures. Learn their stories, honor their achievements, and celebrate their legacy.
+                An engaging bingo game featuring 75 remarkable Black historical figures. Learn their stories, honor their achievements, and celebrate their legacy.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -64,7 +64,7 @@ export default function Home() {
                   size="lg"
                   variant="outline"
                   className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 rounded-lg font-semibold"
-                  onClick={() => window.location.href = '/game'}
+                  onClick={() => window.location.href = '/heroes'}
                 >
                   View Heroes
                 </Button>
@@ -73,7 +73,7 @@ export default function Home() {
               {/* Stats */}
               <div className="flex flex-wrap gap-8 pt-8 border-t border-white/20">
                 <div>
-                  <div className="text-4xl font-bold text-[#d4a574]">30</div>
+                  <div className="text-4xl font-bold text-[#d4a574]">75</div>
                   <div className="text-sm text-[#f0f4ed]">Historical Figures</div>
                 </div>
                 <div>
@@ -184,7 +184,7 @@ export default function Home() {
               Meet the Heroes
             </h2>
             <p className="text-xl text-[#5a5a5a] max-w-3xl mx-auto">
-              Explore our collection of 30 Black historical figures across 8 categories: Civil Rights, Science & Medicine, Arts & Culture, and more.
+              Explore our collection of 75 Black historical figures across 8 categories: Civil Rights, Science & Medicine, Arts & Culture, and more.
             </p>
           </div>
 
@@ -212,7 +212,7 @@ export default function Home() {
             <Button 
               size="lg"
               className="bg-[#2d5016] text-white hover:bg-[#3d6820] text-lg px-10 py-6 rounded-lg font-semibold"
-              onClick={() => window.location.href = '/game'}
+              onClick={() => window.location.href = '/heroes'}
             >
               Browse All Heroes
             </Button>

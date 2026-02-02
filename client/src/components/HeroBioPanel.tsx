@@ -90,6 +90,15 @@ export default function HeroBioPanel({ hero, isOpen, onClose }: HeroBioPanelProp
                 <p className="bio-accomplishment">{hero.keyAccomplishment}</p>
               </div>
 
+              <div className="bio-section" style={{ background: 'linear-gradient(135deg, #f0f4ed 0%, #e8ede5 100%)', padding: '16px', borderRadius: '12px', border: '2px solid #d4a574' }}>
+                <h3 className="bio-section-title" style={{ color: '#2d5016', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ fontSize: '20px' }}>💡</span> Did You Know?
+                </h3>
+                <p className="bio-summary" style={{ fontStyle: 'italic', color: '#3d6820' }}>
+                  {hero.bioSummary}
+                </p>
+              </div>
+
               <motion.div
                 className="bio-learn-more"
                 initial={false}

@@ -1,0 +1,469 @@
+    id: 79,
+    name: "Nana Asma'u",
+    bioSummary: "West African poet, teacher, and Islamic scholar",
+    keyAccomplishment: "Established education system for women in Sokoto Caliphate",
+    era: "1793-1864",
+    category: "Faith & Leadership",
+    bioFull: "Nana Asma'u was a princess, poet, teacher, and daughter of Usman dan Fodio. She created a network of female teachers and wrote extensively in Arabic, Fula, and Hausa, promoting women's education across West Africa.",
+    imageUrl: "/images/heroes/nana-asmau.jpg"
+  },
+  {
+    id: 80,
+    name: "Ezana of Axum",
+    bioSummary: "Ethiopian king and philosopher who adopted Christianity",
+    keyAccomplishment: "Established Christianity in Ethiopia and expanded the Aksumite Empire",
+    era: "320-360 CE",
+    category: "Faith & Leadership",
+    bioFull: "King Ezana ruled the Kingdom of Aksum and was the first monarch to adopt Christianity as the state religion. His reign marked a golden age of trade, culture, and philosophical thought in ancient Ethiopia.",
+    imageUrl: "/images/heroes/ezana.jpg"
+  },
+  {
+    id: 81,
+    name: "Mansa Musa",
+    bioSummary: "Malian emperor and wealthiest person in history",
+    keyAccomplishment: "Built centers of learning and spread Islamic scholarship",
+    era: "1280-1337",
+    category: "Business & Entrepreneurship",
+    bioFull: "Mansa Musa was the tenth emperor of the Mali Empire and is considered the wealthiest person in history. His famous pilgrimage to Mecca distributed so much gold it caused inflation across the Mediterranean. He built the University of Sankore in Timbuktu.",
+    imageUrl: "/images/heroes/mansa-musa.jpg"
+  },
+  {
+    id: 82,
+    name: "Queen Nzinga",
+    bioSummary: "Angolan queen who resisted Portuguese colonization",
+    keyAccomplishment: "Led 30-year resistance against Portuguese invasion",
+    era: "1583-1663",
+    category: "Politics & Law",
+    bioFull: "Queen Nzinga of Ndongo and Matamba was a brilliant military strategist and diplomat who resisted Portuguese colonization for decades. She formed alliances with the Dutch and led her armies personally into battle well into her 60s.",
+    imageUrl: "/images/heroes/queen-nzinga.jpg"
+  },
+  {
+    id: 83,
+    name: "Sundiata Keita",
+    bioSummary: "Founder of the Mali Empire",
+    keyAccomplishment: "Established one of Africa's greatest empires",
+    era: "1217-1255",
+    category: "Politics & Law",
+    bioFull: "Sundiata Keita founded the Mali Empire after uniting Mandinka tribes. His reign established trade routes, promoted agriculture, and created a stable government that lasted for centuries. His story is preserved in the Epic of Sundiata.",
+    imageUrl: "/images/heroes/sundiata.jpg"
+  },
+  {
+    id: 84,
+    name: "Hatshepsut",
+    bioSummary: "Egyptian pharaoh who ruled as king",
+    keyAccomplishment: "One of the most successful pharaohs, expanded trade",
+    era: "1507-1458 BCE",
+    category: "Politics & Law",
+    bioFull: "Hatshepsut was one of the few female pharaohs of Egypt. She ruled for over 20 years, overseeing ambitious building projects and establishing trade networks that brought great wealth to Egypt.",
+    imageUrl: "/images/heroes/hatshepsut.jpg"
+  },
+  {
+    id: 85,
+    name: "Askia Muhammad",
+    bioSummary: "Emperor of Songhai and patron of learning",
+    keyAccomplishment: "Expanded Songhai Empire and promoted Islamic scholarship",
+    era: "1443-1538",
+    category: "Faith & Leadership",
+    bioFull: "Askia Muhammad I was the first ruler of the Askia dynasty of the Songhai Empire. He expanded the empire, established Islamic schools, and made Timbuktu a center of learning and trade.",
+    imageUrl: "/images/heroes/askia-muhammad.jpg"
+  },
+
+  // MUSIC & CREATIVE VISIONARIES (15)
+  {
+    id: 86,
+    name: "Sister Rosetta Tharpe",
+    bioSummary: "Godmother of rock and roll",
+    keyAccomplishment: "Pioneered electric guitar and influenced rock music",
+    era: "1915-1973",
+    category: "Arts & Culture",
+    bioFull: "Sister Rosetta Tharpe was a gospel singer and guitarist who pioneered the use of electric guitar in popular music. Her innovative style influenced Chuck Berry, Elvis Presley, and countless rock musicians.",
+    imageUrl: "/images/heroes/sister-rosetta-tharpe.jpg"
+  },
+  {
+    id: 87,
+    name: "Fela Kuti",
+    bioSummary: "Pioneer of Afrobeat music and political activist",
+    keyAccomplishment: "Created Afrobeat genre and challenged Nigerian government",
+    era: "1938-1997",
+    category: "Arts & Culture",
+    bioFull: "Fela Kuti was a Nigerian musician who created Afrobeat by fusing jazz, funk, and traditional African music. He used his music as a tool for political activism, criticizing corruption and military rule in Nigeria.",
+    imageUrl: "/images/heroes/fela-kuti.jpg"
+  },
+  {
+    id: 88,
+    name: "Thelonious Monk",
+    bioSummary: "Jazz pianist and composer",
+    keyAccomplishment: "Pioneered bebop and composed jazz standards",
+    era: "1917-1982",
+    category: "Arts & Culture",
+    bioFull: "Thelonious Monk was one of the most important figures in jazz. His unique improvisational style and compositions like 'Round Midnight' and 'Straight, No Chaser' became jazz standards.",
+    imageUrl: "/images/heroes/thelonious-monk.jpg"
+  },
+  {
+    id: 89,
+    name: "J Dilla",
+    bioSummary: "Hip-hop producer and beatmaker",
+    keyAccomplishment: "Revolutionized hip-hop production techniques",
+    era: "1974-2006",
+    category: "Arts & Culture",
+    bioFull: "J Dilla (James Yancey) was a hip-hop producer whose innovative sampling techniques and off-kilter beats influenced an entire generation of producers. His album 'Donuts' is considered a masterpiece.",
+    imageUrl: "/images/heroes/j-dilla.jpg"
+  },
+  {
+    id: 90,
+    name: "Gordon Parks",
+    bioSummary: "Photographer, filmmaker, and writer",
+    keyAccomplishment: "First Black director of a major Hollywood film",
+    era: "1912-2006",
+    category: "Arts & Culture",
+    bioFull: "Gordon Parks was a photographer for Life magazine and the first Black director of a major Hollywood film (Shaft, 1971). His photography documented poverty, racism, and the Civil Rights Movement.",
+    imageUrl: "/images/heroes/gordon-parks.jpg"
+  },
+  {
+    id: 91,
+    name: "August Wilson",
+    bioSummary: "Playwright and chronicler of Black American experience",
+    keyAccomplishment: "Wrote the Pittsburgh Cycle of 10 plays",
+    era: "1945-2005",
+    category: "Arts & Culture",
+    bioFull: "August Wilson wrote a cycle of ten plays documenting the African American experience in each decade of the 20th century. He won two Pulitzer Prizes for 'Fences' and 'The Piano Lesson.'",
+    imageUrl: "/images/heroes/august-wilson.jpg"
+  },
+  {
+    id: 92,
+    name: "Max Roach",
+    bioSummary: "Jazz drummer and composer",
+    keyAccomplishment: "Pioneered bebop drumming and civil rights jazz",
+    era: "1924-2007",
+    category: "Arts & Culture",
+    bioFull: "Max Roach was a pioneering jazz drummer who helped develop bebop. His album 'We Insist! Freedom Now Suite' was a powerful statement on civil rights, combining jazz with political activism.",
+    imageUrl: "/images/heroes/max-roach.jpg"
+  },
+  {
+    id: 93,
+    name: "Miriam Makeba",
+    bioSummary: "South African singer and anti-apartheid activist",
+    keyAccomplishment: "Brought African music to global audience",
+    era: "1932-2008",
+    category: "Arts & Culture",
+    bioFull: "Miriam Makeba, known as 'Mama Africa,' was a South African singer who brought African music to international audiences. She was exiled for 31 years for her opposition to apartheid.",
+    imageUrl: "/images/heroes/miriam-makeba.jpg"
+  },
+  {
+    id: 94,
+    name: "Bob Marley",
+    bioSummary: "Reggae legend and global icon",
+    keyAccomplishment: "Popularized reggae music worldwide",
+    era: "1945-1981",
+    category: "Arts & Culture",
+    bioFull: "Bob Marley was a Jamaican singer-songwriter who brought reggae music to the world stage. His songs about love, peace, and social justice made him a global icon and voice for the oppressed.",
+    imageUrl: "/images/heroes/bob-marley.jpg"
+  },
+  {
+    id: 95,
+    name: "Tupac Shakur",
+    bioSummary: "Rapper, actor, and poet",
+    keyAccomplishment: "One of the most influential rappers of all time",
+    era: "1971-1996",
+    category: "Arts & Culture",
+    bioFull: "Tupac Shakur was a rapper and actor whose music addressed contemporary social issues including racism, police brutality, and poverty. He is one of the best-selling music artists of all time.",
+    imageUrl: "/images/heroes/tupac.jpg"
+  },
+  {
+    id: 96,
+    name: "Lauryn Hill",
+    bioSummary: "Singer, rapper, and songwriter",
+    keyAccomplishment: "First hip-hop artist to win Album of the Year Grammy",
+    era: "1975-present",
+    category: "Arts & Culture",
+    bioFull: "Lauryn Hill's album 'The Miseducation of Lauryn Hill' won five Grammy Awards and broke barriers for women in hip-hop. She is known for blending rap, soul, and reggae.",
+    imageUrl: "/images/heroes/lauryn-hill.jpg"
+  },
+  {
+    id: 97,
+    name: "Kendrick Lamar",
+    bioSummary: "Rapper and Pulitzer Prize winner",
+    keyAccomplishment: "First non-classical, non-jazz musician to win Pulitzer Prize",
+    era: "1987-present",
+    category: "Arts & Culture",
+    bioFull: "Kendrick Lamar is a rapper whose album 'DAMN.' won the Pulitzer Prize for Music in 2018. His work addresses racism, violence, and the Black experience in America with poetic complexity.",
+    imageUrl: "/images/heroes/kendrick-lamar.jpg"
+  },
+  {
+    id: 98,
+    name: "Aretha Franklin",
+    bioSummary: "Queen of Soul",
+    keyAccomplishment: "18 Grammy Awards and voice of civil rights",
+    era: "1942-2018",
+    category: "Arts & Culture",
+    bioFull: "Aretha Franklin was the 'Queen of Soul' whose powerful voice and songs like 'Respect' became anthems of the civil rights and feminist movements. She won 18 Grammy Awards.",
+    imageUrl: "/images/heroes/aretha-franklin.jpg"
+  },
+  {
+    id: 99,
+    name: "Prince",
+    bioSummary: "Musical genius and multi-instrumentalist",
+    keyAccomplishment: "Pioneered Minneapolis sound and fought for artist rights",
+    era: "1958-2016",
+    category: "Arts & Culture",
+    bioFull: "Prince was a musical innovator who played 27 instruments and created the 'Minneapolis sound.' He fought for artists' rights to own their music and pushed boundaries in fashion and performance.",
+    imageUrl: "/images/heroes/prince.jpg"
+  },
+  {
+    id: 100,
+    name: "Beyoncé",
+    bioSummary: "Singer, performer, and cultural icon",
+    keyAccomplishment: "Most Grammy-winning artist in history",
+    era: "1981-present",
+    category: "Arts & Culture",
+    bioFull: "Beyoncé is the most awarded artist in Grammy history. Her visual albums and performances celebrate Black culture, feminism, and social justice. She has redefined what it means to be a global superstar.",
+    imageUrl: "/images/heroes/beyonce.jpg"
+  },
+
+  // BUSINESS, TECH & WEALTH-BUILDING (12)
+  {
+    id: 101,
+    name: "Robert F. Smith",
+    bioSummary: "Billionaire investor and philanthropist",
+    keyAccomplishment: "Founder of Vista Equity Partners, paid off Morehouse College debt",
+    era: "1962-present",
+    category: "Business & Entrepreneurship",
+    bioFull: "Robert F. Smith is a billionaire private equity investor who founded Vista Equity Partners. In 2019, he paid off the student loan debt of the entire Morehouse College graduating class.",
+    imageUrl: "/images/heroes/robert-f-smith.jpg"
+  },
+  {
+    id: 102,
+    name: "Reginald F. Lewis",
+    bioSummary: "First Black billionaire and Wall Street pioneer",
+    keyAccomplishment: "Created largest Black-owned business in US",
+    era: "1942-1993",
+    category: "Business & Entrepreneurship",
+    bioFull: "Reginald Lewis was a lawyer and businessman who acquired Beatrice International Foods for $985 million, making it the largest Black-owned business in the US at the time.",
+    imageUrl: "/images/heroes/reginald-lewis.jpg"
+  },
+  {
+    id: 103,
+    name: "Annie Turnbo Malone",
+    bioSummary: "Hair care entrepreneur and philanthropist",
+    keyAccomplishment: "One of the first Black women millionaires",
+    era: "1869-1957",
+    category: "Business & Entrepreneurship",
+    bioFull: "Annie Turnbo Malone developed hair care products for Black women and built a cosmetics empire. She was one of the first Black women to become a millionaire and donated millions to charity.",
+    imageUrl: "/images/heroes/annie-malone.jpg"
+  },
+  {
+    id: 104,
+    name: "Berry Gordy",
+    bioSummary: "Founder of Motown Records",
+    keyAccomplishment: "Created the Motown sound and launched legendary careers",
+    era: "1929-present",
+    category: "Business & Entrepreneurship",
+    bioFull: "Berry Gordy founded Motown Records in 1959 and created the 'Motown Sound' that dominated popular music. He launched the careers of Diana Ross, Stevie Wonder, Marvin Gaye, and many others.",
+    imageUrl: "/images/heroes/berry-gordy.jpg"
+  },
+  {
+    id: 105,
+    name: "A.G. Gaston",
+    bioSummary: "Business tycoon and civil rights supporter",
+    keyAccomplishment: "Built business empire during segregation",
+    era: "1892-1996",
+    category: "Business & Entrepreneurship",
+    bioFull: "A.G. Gaston built a business empire in Birmingham, Alabama during segregation, including insurance companies, banks, and a motel. He supported the Civil Rights Movement financially.",
+    imageUrl: "/images/heroes/ag-gaston.jpg"
+  },
+  {
+    id: 106,
+    name: "Maggie Lena Walker",
+    bioSummary: "First Black woman to charter a bank",
+    keyAccomplishment: "Founded St. Luke Penny Savings Bank",
+    era: "1864-1934",
+    category: "Business & Entrepreneurship",
+    bioFull: "Maggie Lena Walker was the first Black woman to charter a bank in the United States. She founded the St. Luke Penny Savings Bank in Richmond, Virginia in 1903.",
+    imageUrl: "/images/heroes/maggie-walker.jpg"
+  },
+  {
+    id: 107,
+    name: "Oprah Winfrey",
+    bioSummary: "Media mogul and philanthropist",
+    keyAccomplishment: "Built media empire and became first Black female billionaire",
+    era: "1954-present",
+    category: "Business & Entrepreneurship",
+    bioFull: "Oprah Winfrey built a media empire through her talk show, production company, and OWN network. She became the first Black female billionaire and has donated hundreds of millions to education.",
+    imageUrl: "/images/heroes/oprah.jpg"
+  },
+  {
+    id: 108,
+    name: "Jay-Z",
+    bioSummary: "Rapper, entrepreneur, and billionaire",
+    keyAccomplishment: "First hip-hop billionaire",
+    era: "1969-present",
+    category: "Business & Entrepreneurship",
+    bioFull: "Jay-Z (Shawn Carter) is a rapper and entrepreneur who became hip-hop's first billionaire through music, Roc Nation, Tidal, and investments in companies like Uber. He advocates for criminal justice reform.",
+    imageUrl: "/images/heroes/jay-z.jpg"
+  },
+  {
+    id: 109,
+    name: "Tyler Perry",
+    bioSummary: "Filmmaker, actor, and studio owner",
+    keyAccomplishment: "Built Tyler Perry Studios, largest Black-owned studio",
+    era: "1969-present",
+    category: "Business & Entrepreneurship",
+    bioFull: "Tyler Perry is a filmmaker who built Tyler Perry Studios, one of the largest film production studios in the US. He writes, directs, produces, and stars in his films and TV shows.",
+    imageUrl: "/images/heroes/tyler-perry.jpg"
+  },
+  {
+    id: 110,
+    name: "Ursula Burns",
+    bioSummary: "First Black woman CEO of Fortune 500 company",
+    keyAccomplishment: "Led Xerox as CEO",
+    era: "1958-present",
+    category: "Business & Entrepreneurship",
+    bioFull: "Ursula Burns was the first Black woman to be CEO of a Fortune 500 company (Xerox). She rose from intern to CEO and has served on numerous corporate boards.",
+    imageUrl: "/images/heroes/ursula-burns.jpg"
+  },
+  {
+    id: 111,
+    name: "Kenneth Chenault",
+    bioSummary: "Former CEO of American Express",
+    keyAccomplishment: "Led American Express for 17 years",
+    era: "1951-present",
+    category: "Business & Entrepreneurship",
+    bioFull: "Kenneth Chenault was CEO of American Express from 2001 to 2018. He is one of the most successful Black executives in corporate America and serves on multiple boards.",
+    imageUrl: "/images/heroes/kenneth-chenault.jpg"
+  },
+  {
+    id: 112,
+    name: "Rihanna",
+    bioSummary: "Singer, entrepreneur, and billionaire",
+    keyAccomplishment: "Founded Fenty Beauty and became youngest self-made female billionaire",
+    era: "1988-present",
+    category: "Business & Entrepreneurship",
+    bioFull: "Rihanna is a singer and entrepreneur who founded Fenty Beauty, revolutionizing the cosmetics industry with inclusive products. She became the youngest self-made female billionaire.",
+    imageUrl: "/images/heroes/rihanna.jpg"
+  },
+
+  // GLOBAL & CIVIL RIGHTS LEADERS (8)
+  {
+    id: 113,
+    name: "Thomas Sankara",
+    bioSummary: "Burkinabé revolutionary and president",
+    keyAccomplishment: "Transformed Burkina Faso with anti-imperialist policies",
+    era: "1949-1987",
+    category: "Politics & Law",
+    bioFull: "Thomas Sankara was president of Burkina Faso who implemented anti-imperialist policies, promoted women's rights, and fought corruption. He was assassinated in 1987 but remains an icon of African liberation.",
+    imageUrl: "/images/heroes/thomas-sankara.jpg"
+  },
+  {
+    id: 114,
+    name: "Patrice Lumumba",
+    bioSummary: "First prime minister of independent Congo",
+    keyAccomplishment: "Led Congo to independence from Belgium",
+    era: "1925-1961",
+    category: "Politics & Law",
+    bioFull: "Patrice Lumumba was the first prime minister of the independent Democratic Republic of the Congo. He was a pan-Africanist who fought against colonialism and was assassinated in 1961.",
+    imageUrl: "/images/heroes/patrice-lumumba.jpg"
+  },
+  {
+    id: 115,
+    name: "Septima Clark",
+    bioSummary: "Civil rights educator and organizer",
+    keyAccomplishment: "Created citizenship schools for voter registration",
+    era: "1898-1987",
+    category: "Civil Rights",
+    bioFull: "Septima Clark, known as the 'Queen Mother of the Civil Rights Movement,' created citizenship schools that taught literacy and voter registration. Her work registered thousands of Black voters.",
+    imageUrl: "/images/heroes/septima-clark.jpg"
+  },
+  {
+    id: 116,
+    name: "Kwame Nkrumah",
+    bioSummary: "First president of Ghana and pan-Africanist",
+    keyAccomplishment: "Led Ghana to independence and promoted African unity",
+    era: "1909-1972",
+    category: "Politics & Law",
+    bioFull: "Kwame Nkrumah led Ghana to independence in 1957, making it the first sub-Saharan African country to gain independence. He was a leading pan-Africanist who advocated for African unity.",
+    imageUrl: "/images/heroes/kwame-nkrumah.jpg"
+  },
+  {
+    id: 117,
+    name: "Nelson Mandela",
+    bioSummary: "Anti-apartheid revolutionary and South African president",
+    keyAccomplishment: "Ended apartheid and became first Black president of South Africa",
+    era: "1918-2013",
+    category: "Politics & Law",
+    bioFull: "Nelson Mandela spent 27 years in prison for fighting apartheid. After his release, he became South Africa's first Black president and worked for reconciliation. He won the Nobel Peace Prize in 1993.",
+    imageUrl: "/images/heroes/nelson-mandela.jpg"
+  },
+  {
+    id: 118,
+    name: "Desmond Tutu",
+    bioSummary: "Archbishop and anti-apartheid activist",
+    keyAccomplishment: "Led Truth and Reconciliation Commission",
+    era: "1931-2021",
+    category: "Faith & Leadership",
+    bioFull: "Desmond Tutu was an Anglican archbishop who fought against apartheid in South Africa. He chaired the Truth and Reconciliation Commission and won the Nobel Peace Prize in 1984.",
+    imageUrl: "/images/heroes/desmond-tutu.jpg"
+  },
+  {
+    id: 119,
+    name: "Steve Biko",
+    bioSummary: "South African anti-apartheid activist",
+    keyAccomplishment: "Founded Black Consciousness Movement",
+    era: "1946-1977",
+    category: "Civil Rights",
+    bioFull: "Steve Biko was a South African anti-apartheid activist who founded the Black Consciousness Movement. He was killed in police custody in 1977, becoming a martyr for the anti-apartheid cause.",
+    imageUrl: "/images/heroes/steve-biko.jpg"
+  },
+  {
+    id: 120,
+    name: "Winnie Mandela",
+    bioSummary: "Anti-apartheid activist and politician",
+    keyAccomplishment: "Fought apartheid while Nelson Mandela was imprisoned",
+    era: "1936-2018",
+    category: "Civil Rights",
+    bioFull: "Winnie Mandela was an anti-apartheid activist who continued the fight while her husband Nelson was imprisoned. She faced harassment, imprisonment, and exile but remained a symbol of resistance.",
+    imageUrl: "/images/heroes/winnie-mandela.jpg"
+  },
+
+  // ADDITIONAL CONTEMPORARY FIGURES (5)
+  {
+    id: 121,
+    name: "Ta-Nehisi Coates",
+    bioSummary: "Writer and journalist",
+    keyAccomplishment: "Wrote 'Between the World and Me' and advocates for reparations",
+    era: "1975-present",
+    category: "Arts & Culture",
+    bioFull: "Ta-Nehisi Coates is a writer and journalist known for his essays on race and his book 'Between the World and Me.' He has been a leading voice in the conversation about reparations for slavery.",
+    imageUrl: "/images/heroes/ta-nehisi-coates.jpg"
+  },
+  {
+    id: 122,
+    name: "Ava DuVernay",
+    bioSummary: "Filmmaker and director",
+    keyAccomplishment: "Directed 'Selma' and '13th', first Black woman nominated for Best Director Golden Globe",
+    era: "1972-present",
+    category: "Arts & Culture",
+    bioFull: "Ava DuVernay is a filmmaker known for 'Selma,' '13th,' and 'When They See Us.' She was the first Black woman nominated for a Golden Globe for Best Director.",
+    imageUrl: "/images/heroes/ava-duvernay.jpg"
+  },
+  {
+    id: 123,
+    name: "Stacey Abrams",
+    bioSummary: "Politician, voting rights activist, and author",
+    keyAccomplishment: "Led voter registration efforts in Georgia",
+    era: "1973-present",
+    category: "Politics & Law",
+    bioFull: "Stacey Abrams is a politician and voting rights activist who founded Fair Fight Action. Her voter registration efforts in Georgia are credited with helping flip the state in the 2020 election.",
+    imageUrl: "/images/heroes/stacey-abrams.jpg"
+  },
+  {
+    id: 124,
+    name: "LeBron James",
+    bioSummary: "Basketball player, entrepreneur, and activist",
+    keyAccomplishment: "Founded I PROMISE School and advocates for social justice",
+    era: "1984-present",
+    category: "Sports",
+    bioFull: "LeBron James is one of the greatest basketball players of all time. He founded the I PROMISE School in Akron, Ohio and has been a vocal advocate for social justice and education.",
+    imageUrl: "/images/heroes/lebron-james.jpg"
+  },
+  {
+    id: 125,

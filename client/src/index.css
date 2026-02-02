@@ -86,6 +86,33 @@
   --sidebar-ring: oklch(0.35 0.08 145);
 }
 
+/* Dark Mode Theme */
+.dark {
+  --primary: oklch(0.45 0.08 145); /* Lighter forest green for dark mode */
+  --primary-foreground: oklch(0.98 0.01 85);
+  --secondary: oklch(0.72 0.06 75); /* Warm gold stays the same */
+  --secondary-foreground: oklch(0.15 0.03 30);
+  --accent: oklch(0.52 0.12 25); /* Lighter burgundy */
+  --accent-foreground: oklch(0.98 0.01 85);
+  --background: oklch(0.15 0.02 30); /* Dark brown background */
+  --foreground: oklch(0.95 0.01 85); /* Light cream text */
+  --card: oklch(0.20 0.02 30); /* Slightly lighter than background */
+  --card-foreground: oklch(0.95 0.01 85);
+  --popover: oklch(0.20 0.02 30);
+  --popover-foreground: oklch(0.95 0.01 85);
+  --muted: oklch(0.25 0.02 30);
+  --muted-foreground: oklch(0.65 0.02 85);
+  --border: oklch(0.30 0.02 30);
+  --input: oklch(0.30 0.02 30);
+  --ring: oklch(0.45 0.08 145);
+  --sidebar: oklch(0.18 0.02 30);
+  --sidebar-foreground: oklch(0.95 0.01 85);
+  --sidebar-accent: oklch(0.25 0.02 30);
+  --sidebar-accent-foreground: oklch(0.95 0.01 85);
+  --sidebar-border: oklch(0.30 0.02 30);
+  --sidebar-ring: oklch(0.45 0.08 145);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

@@ -6,13 +6,15 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Game from "./pages/Game";
+import Heroes from "./pages/Heroes";
+import DarkModeToggle from "./components/DarkModeToggle";
 
 
 function Router() {
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
+    <Switch>      <Route path={"/"} component={Home} />
       <Route path={"/game"} component={Game} />
+      <Route path={"/heroes"} component={Heroes} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -34,6 +36,7 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
+          <DarkModeToggle />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
